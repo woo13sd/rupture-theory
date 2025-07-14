@@ -14,3 +14,31 @@ Key assets:
 
 ## 🔍 Repository Structure
 
+## 🚀 Quick Start
+
+1. **Open in Colab**  
+   Click the badge at the top to launch the notebook.
+
+2. **Install dependencies** (if running locally)  
+   ```bash
+   pip install camb numpy matplotlib
+
+---
+
+### 3. Add a “Citation” section  
+Just after Quick Start, include:
+
+```markdown
+###📝 Citation
+
+If you use this code, please cite:
+
+```bibtex
+@misc{rupture-theory-camb-2025,
+  title        = {Rupture Theory CAMB Reproduction},
+  author       = {Woodbyrne, Robert C.},
+  howpublished = {GitHub repository},
+  year         = {2025},
+  doi          = {10.5281/zenodo.YOUR_DOI},
+  url          = {https://github.com/woo13sd/rupture-theory}
+}
