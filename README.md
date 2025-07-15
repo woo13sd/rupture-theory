@@ -4,6 +4,15 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/woo13sd/rupture-theory)  
 ![License](https://img.shields.io/github/license/woo13sd/rupture-theory)
 
+## 🚀 Release Naming
+
+Each GitHub release of the CAMB Colab environment is tagged with a semantic version plus an alphabetical cosmology codename:
+
+- **Tag**: `v<MAJOR>.<MINOR>-<codename>` (e.g. `v1.0-asteroid`)  
+- **Codename**: A cosmology or astrophysics term in alphabetical order (e.g. Asteroid, Black Hole, Comet, …).
+
+This keeps our history both versioned and memorable.
+
 ## 📖 Overview
 
 This repository contains all code, notebooks, and CAMB configuration files needed to reproduce the CMB and matter-power spectra results in the “Rupture Theory” manuscript.
