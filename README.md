@@ -8,7 +8,7 @@
 
 Each GitHub release of the CAMB Colab environment is tagged with a semantic version plus an alphabetical cosmology codename:
 
-- **Tag**: `v<MAJOR>.<MINOR>.<MINOR>-<codename>` (e.g. `v1.0.1-asteroid`)  
+- **Tag**: `v<MAJOR>.<MINOR>.<PATCH>-<codename>` (e.g. `v1.0.1-asteroid`)  
 - **Codename**: A cosmology or astrophysics term in alphabetical order (e.g. Asteroid, Black Hole, Comet, …).
 
 This keeps our history both versioned and memorable.
