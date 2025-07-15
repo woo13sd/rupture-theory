@@ -6,34 +6,47 @@
 
 ## 📖 Overview
 
-This repo contains all code, notebooks, and CAMB configuration files needed to reproduce the CMB and matter-power spectra results in the “Rupture Theory” manuscript.  
+This repository contains all code, notebooks, and CAMB configuration files needed to reproduce the CMB and matter-power spectra results in the “Rupture Theory” manuscript.
 
 Key assets:  
 - **Colab notebook**: `notebooks/Rupture.ipynb`  
-- **CAMB support files**: `camb_utils/params_camb.ini`, `initialpower.f90`, `reionization.f90`  
+- **CAMB support files**: `camb_utils/params_camb.ini`, `camb_utils/initialpower.f90`, `camb_utils/reionization.f90`  
 
 ## 🔍 Repository Structure
+.
+├── notebooks/
+│ └── Rupture.ipynb # Main Colab notebook for CAMB runs
+├── camb_utils/
+│ ├── params_camb.ini # Rupture-specific CAMB parameters
+│ ├── initialpower.f90 # Custom primordial power module
+│ └── reionization.f90 # Modified reionization history module
+├── data/
+│ └── raw/ # (git-ignored) CAMB output files
+├── docs/
+│ ├── CAMB_output_details.md# Appendix tables & FITS metadata
+│ └── usage_guide.md # Local run instructions
+├── images/
+│ └── colab_badge.pdf # “Open in Colab” badge asset
+├── CITATION.cff # Citation metadata for this code
+├── LICENSE # License terms
+└── README.md # ← this file
 
 ## 🚀 Quick Start
 
 1. **Open in Colab**  
-   Click the badge at the top to launch the notebook.
+   Click the badge at the top to launch `notebooks/Rupture.ipynb` in Google Colab.
 
 2. **Install dependencies** (if running locally)  
    ```bash
    pip install camb numpy matplotlib
+3. Configure parameters
+   Edit the top cell of notebooks/Rupture.ipynb or modify camb_utils/params_camb.ini.
 
----
+4. Run & Visualize
+   Execute all cells to generate and plot the CMB and matter-power spectra.
 
-### 3. Add a “Citation” section  
-Just after Quick Start, include:
-
-```markdown
-###📝 Citation
-
+📝 Citation
 If you use this code, please cite:
-
-```bibtex
 @misc{rupture-theory-camb-2025,
   title        = {Rupture Theory CAMB Reproduction},
   author       = {Woodbyrne, Robert C.},
@@ -42,3 +55,4 @@ If you use this code, please cite:
   doi          = {10.5281/zenodo.YOUR_DOI},
   url          = {https://github.com/woo13sd/rupture-theory}
 }
+
