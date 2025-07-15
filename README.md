@@ -74,12 +74,10 @@ If you use this code, please cite:
   author       = {Woodbyrne, Robert C.},
   howpublished = {GitHub repository},
   year         = {2025},
-  doi          = {10.5281/zenodo.YOUR_DOI},
+  doi          = {10.5281/zenodo.10.5281/zenodo.15890401},
   url          = {https://github.com/woo13sd/rupture-theory}
 }
 ```
-
-*(Replace `YOUR_DOI` with the DOI minted via Zenodo once available.)*
 
 ## 📜 License
 
