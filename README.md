@@ -3,7 +3,7 @@
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/woo13sd/rupture-theory/blob/main/notebooks/Rupture.ipynb)  
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/woo13sd/rupture-theory)  
 ![License](https://img.shields.io/github/license/woo13sd/rupture-theory)
-[![DOI](https://zenodo.org/badge/1019375539.svg)](https://doi.org/10.5281/zenodo.15890400)
+![DOI](https://zenodo.org/badge/1019375539.svg)(https://doi.org/10.5281/zenodo.15890400)
 
 ## 🚀 Release Naming
 
