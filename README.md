@@ -19,7 +19,7 @@ This repository contains all code, data files, and Jupyter/Colab notebooks neces
 - **Figures:** All publication-ready figures in `/images`
 
 ## 📂 Repository Structure
-,,,
+```
 .
 ├── notebooks/
 │   └── Rupture.ipynb
@@ -48,7 +48,7 @@ This repository contains all code, data files, and Jupyter/Colab notebooks neces
 ├── LICENSE
 ├── README.md
 └── CITATION.cff
-,,,
+```
 ## 🔬 Reproducing the Results
 
 1. **Open in Colab**
