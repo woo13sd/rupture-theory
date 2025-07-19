@@ -19,6 +19,7 @@ This repository contains all code, data files, and Jupyter/Colab notebooks neces
 - **Figures:** All publication-ready figures in `/images`
 
 ## 📂 Repository Structure
+
 ```
 .
 ├── notebooks/
@@ -49,6 +50,7 @@ This repository contains all code, data files, and Jupyter/Colab notebooks neces
 ├── README.md
 └── CITATION.cff
 ```
+
 ## 🔬 Reproducing the Results
 
 1. **Open in Colab**
