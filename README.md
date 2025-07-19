@@ -1,68 +1,68 @@
 # Rupture Theory Repository
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/woo13sd/rupture-theory/blob/main/notebooks/Rupture.ipynb)  
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/woo13sd/rupture-theory)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)   
-[![DOI](https://zenodo.org/badge/1019375539.svg)](https://doi.org/10.5281/zenodo.15890400)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/woo13sd/rupture-theory/blob/main/notebooks/Rupture.ipynb)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/woo13sd/rupture-theory)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/1019375539.svg)](https://doi.org/10.5281/zenodo.15890401)
 
-## 🚀 Release Naming
+## 🚀 Overview
 
-Each GitHub release of the CAMB Colab environment is tagged with a semantic version plus an alphabetical cosmology codename:
+This repository contains all code, data files, and Jupyter/Colab notebooks necessary to **reproduce the results** of the “Rupture Theory” manuscript—namely the CMB and matter power spectrum comparisons with ΛCDM.
 
-- **Tag**: `v<MAJOR>.<MINOR>.<PATCH>-<codename>` (e.g. `v1.0.1-asteroid`)  
-- **Codename**: A cosmology or astrophysics term in alphabetical order (e.g. Asteroid, Black Hole, Comet, …).
-
-This keeps our history both versioned and memorable.
-
-## 📖 Overview
-
-This repository contains all code, notebooks, and CAMB configuration files needed to reproduce the CMB and matter-power spectra results in the “Rupture Theory” manuscript.
-
-Key assets:  
-- **Colab notebook**: `notebooks/Rupture.ipynb`  
-- **CAMB support files**:  
+**Key assets:**
+- **Colab notebook:** `notebooks/Rupture.ipynb`
+- **CAMB support files:**  
   - `camb_utils/params_camb.ini`  
   - `camb_utils/initialpower.f90`  
-  - `camb_utils/reionization.f90`  
+  - `camb_utils/reionization.f90`
+- **Data:** All processed `.dat` files for figures in `/data`
+- **Figures:** All publication-ready figures in `/images`
 
-## 🔍 Repository Structure
+## 📂 Repository Structure
 
-```text
 .
 ├── notebooks/
-│   └── Rupture.ipynb         # Main Colab notebook for CAMB runs
+│   └── Rupture.ipynb
 ├── camb_utils/
-│   ├── params_camb.ini       # Rupture-specific CAMB parameters
-│   ├── initialpower.f90      # Custom primordial power module
-│   └── reionization.f90      # Modified reionization history module
+│   ├── params_camb.ini
+│   ├── initialpower.f90
+│   └── reionization.f90
 ├── data/
-│   └── raw/                  # (git-ignored) CAMB output files
-├── docs/
-│   ├── CAMB_output_details.md  # Appendix tables & FITS metadata
-│   └── usage_guide.md          # Local run instructions
+│   ├── primordial_power.dat
+│   ├── primordial_power_lcdm.dat
+│   ├── LCDM_TT.dat
+│   ├── Rupture_TT.dat
+│   ├── LCDM_EE.dat
+│   ├── Rupture_CAMB_EE.dat
+│   ├── LCDM_Clpp.dat
+│   ├── Rupture_Clpp.dat
+│   ├── LCDM_Pk.dat
+│   └── Rupture_Pk.dat
 ├── images/
-│   └── colab_badge.pdf       # “Open in Colab” badge asset
-├── CITATION.cff              # Citation metadata for this code
-├── LICENSE                   # License terms
-└── README.md                 # ← this file
-````
+│   ├── tt_rt_vs_lcdm.png
+│   ├── ee_rt_vs_lcdm.png
+│   ├── tt_fr.png
+│   ├── ee_fr.png
+│   ├── lensing_residual.png
+│   └── matter_power.png
+├── LICENSE
+├── README.md
+└── CITATION.cff
 
-## 🚀 Quick Start
+## 🔬 Reproducing the Results
 
 1. **Open in Colab**
-   Click the badge at the top to launch `notebooks/Rupture.ipynb` in Google Colab.
-
+   - Click the badge at the top or [launch here](https://colab.research.google.com/github/woo13sd/rupture-theory/blob/main/notebooks/Rupture.ipynb).
 2. **Install dependencies**
-
-   ```bash
-   pip install camb numpy matplotlib
-   ```
-
-3. **Configure parameters**
-   Edit the top cell of `notebooks/Rupture.ipynb` or modify `camb_utils/params_camb.ini`.
-
-4. **Run & Visualize**
-   Execute all cells to generate and plot the CMB and matter-power spectra.
+   - The notebook will install required packages (CAMB, NumPy, matplotlib, seaborn, etc.) automatically, but you can run:
+     ```bash
+     pip install camb numpy matplotlib seaborn
+     ```
+3. **Run the notebook**
+   - Step through `notebooks/Rupture.ipynb` to generate and plot all data files and publication figures.
+   - All figures and .dat files will be saved to `/images` and `/data` respectively.
+4. **(Optional) Modify parameters**
+   - Edit `camb_utils/params_camb.ini` or the relevant `.f90` modules to test variant cosmologies.
 
 ## 📝 Citation
 
@@ -74,19 +74,30 @@ If you use this code, please cite:
   author       = {Woodbyrne, Robert C.},
   howpublished = {GitHub repository},
   year         = {2025},
-  doi          = {10.5281/zenodo.10.5281/zenodo.15890401},
+  doi          = {10.5281/zenodo.15890401},
   url          = {https://github.com/woo13sd/rupture-theory}
 }
-```
 
-## 📜 License
+📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
+
+🗂️ Data & Figure Reference
+	•	All raw and processed .dat files: /data
+	•	Publication-ready figures (as in the manuscript): /images
+	•	Main notebook: notebooks/Rupture.ipynb
+	•	Custom CAMB modules: camb_utils/
+
+ℹ️ Further Information
+	•	Appendix in the manuscript documents all parameter choices and data outputs.
+	•	For detailed usage and configuration, see the usage_guide.md in the docs/ folder (if available).
+	•	Archival DOI for peer review and reference: 10.5281/zenodo.15890401
+
+⸻
+
+Last updated: July 2025
 
 ---
 
-*Last updated: July 14, 2025*
-
-```
-::contentReference[oaicite:0]{index=0}
-```
+**You can further edit the “Repository Structure” and “Data & Figure Reference” to match exactly what’s in your repo as needed.**  
+This version is **fully consistent** with your reproducible workflow and makes the repo plug-and-play for Colab, peer reviewers, or future users.
